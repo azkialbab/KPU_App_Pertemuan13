@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="106dp"
+        android:layout_height="127dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="Apps ini di gunakan oleh petugas KPU untuk mendata peserta pemilu"
+        android:textSize="14sp"/>
+
+
+    <EditText
+        android:id="@+id/lusername"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:gravity="start"
+        android:textColor="@color/tulisan"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/person"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_shape"
+        android:elevation="5dp"
+        app:cornerRadius="10dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/lpassword"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:gravity="start"
+        android:textColor="@color/tulisan"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/lock"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_shape"
+        android:elevation="5dp"
+        app:cornerRadius="10dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/blue"
+        android:elevation="20dp"
+        app:cornerRadius="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="New Member? Register"
+        android:textSize="10sp"
+        />
+</LinearLayout>

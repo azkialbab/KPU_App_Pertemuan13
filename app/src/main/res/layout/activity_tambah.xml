@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        android:text="Tambah Data"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/tname"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Pemilih"
+        android:gravity="start"
+        android:textColor="@color/tulisan"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/person"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_shape"
+        android:elevation="5dp"
+        app:cornerRadius="10dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/tnik"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="NIK"
+        android:gravity="start"
+        android:textColor="@color/tulisan"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/nik"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_shape"
+        android:elevation="5dp"
+        app:cornerRadius="10dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="Pilih Gender:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/tGender"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:textColor="@color/white"
+            android:layout_marginEnd="80dp" />
+
+        <RadioButton
+            android:id="@+id/tFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/talamat"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:gravity="start"
+        android:textColor="@color/tulisan"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/location"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_shape"
+        android:elevation="5dp"
+        app:cornerRadius="10dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tsave"
+        android:layout_width="330dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTint="@color/blue"
+        android:elevation="5dp"
+        app:cornerRadius="10dp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

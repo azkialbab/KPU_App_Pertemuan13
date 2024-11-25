@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        android:text="Data Pemilih Saat Ini"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView to display data -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPemilih"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hTambah"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTint="@color/blue"
+        android:elevation="5dp"
+        app:cornerRadius="10dp"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tLogout"
+        android:layout_width="330dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:backgroundTint="@color/blue"
+        android:elevation="5dp"
+        app:cornerRadius="10dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
